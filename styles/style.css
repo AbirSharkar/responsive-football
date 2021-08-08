@@ -1,0 +1,234 @@
+/* font style */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* Common Style */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* ----------------
+  watch live starts
+-------------------*/
+
+.fst-part {
+  display: flex;
+  background-color: #2d25a0;
+  height: 570px;
+  background-size: auto;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.half-width {
+  padding-left: 10%;
+  padding-top: 6%;
+  text-align: justify;
+}
+.half-width img {
+  width: 556px;
+}
+
+.txt-part h1 {
+  font-size: 64px;
+  color: white;
+}
+.watch-live-button {
+  text-decoration: none;
+  background-color: #e02c6d;
+  padding: 15px 20px;
+  font-size: 15px;
+  color: white;
+  transition: 0.15s linear;
+}
+.watch-live-button:hover {
+  background-color: limegreen;
+  box-shadow: 5px 10px 25px yellowgreen;
+  padding: 25px 30px;
+  font-size: 22;
+  font-weight: 700;
+}
+
+/* ------------------
+  watch live ends
+-------------------*/
+
+/*--------------------------
+    player cards start
+--------------------------- */
+.snd-sec {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.container {
+  margin-top: 30px;
+  background-color: white;
+  padding: 33px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.player-card img {
+  width: 330px;
+}
+.player-card {
+  box-shadow: 5px 5px 20px rgb(219, 218, 218);
+  padding: 20px;
+  width: 330px;
+  cursor: pointer;
+}
+.player-info p {
+  color: grey;
+  font-size: 16px;
+}
+/*--------------------------
+    player cards start
+--------------------------- */
+
+/*--------------------
+    bonus part start
+---------------------- */
+
+.bonus{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    background-color: crimson;
+    padding: 3%;
+    
+}
+
+.b-h3{
+    display: grid;
+    justify-content: center;
+    color: whitesmoke;
+    font-weight: 700px;
+}
+
+/*--------------------
+    bonus part end
+---------------------- */
+
+
+
+/* ----------------
+  last Part Starts
+-------------------*/
+.last-part img {
+  width: 483px;
+  margin-left: 35%;
+}
+.social-icon {
+  text-align: center;
+  cursor: pointer;
+  color: gray;
+}
+
+.copyright {
+  text-align: center;
+}
+.last-part {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+/* ----------------
+  last Part ends
+-------------------*/
+
+
+/* -------------------------------
+  Responsive mobile start
+----------------------------------*/
+@media only screen and (max-width: 688px) {
+  .fst-part {
+    width: 730px;
+    display: block;
+    background-color: #2d25a0;
+    height: 1100px;
+    background-size: auto;
+    margin-bottom: 20px;
+  }
+
+  .txt-part {
+    width: 470px;
+  }
+  .half-width img {
+    padding-top: 50px;
+    width: 600px;
+  }
+  .image-part {
+    display: flex;
+    justify-content: center;
+  }
+  .snd-sec {
+    margin-top: 20px;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .player-info h2 {
+    font-size: 40px;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+  }
+  .player-card {
+    box-shadow: 5px 5px 20px rgb(219, 218, 218);
+    padding: 20px;
+    width: 470px;
+  }
+  .player-card p {
+    font-size: 16px;
+  }
+  .player-card img {
+    width: 450px;
+  }
+  .players {
+    position: relative;
+    left: 107px;
+  }
+  
+  .last-part img {
+    width: 483px;
+    margin-left: 38%;
+  }
+  .social-icon {
+    width: 700px;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    letter-spacing: 5px;
+  }
+
+  .copyright {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+  }
+  .best-player {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 2300px;
+    grid-row-gap: 50px;
+  }
+
+  .player-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+    border: 10px solid #e02c6d;
+  }
+  
+  .half-width {
+    margin-left: 30px;
+  }
+}
+
+/* -------------------------------
+  Responsive mobile end
+----------------------------------*/
